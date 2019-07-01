@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title> 
+      RocketSeat JavaScript - Exercise 05
+    </title>
+  </head>
+  <body>
+    <script>
+      /*  
+      Dado o seguinte vetor de objetos: *Abaixo*      
+      Escreva uma função que produza o seguinte resultado: */
+      
+
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+      ];
+
+      for (usuario of usuarios) {
+        console.log(
+          "O " +
+          usuario.nome +
+          " possui as habilidades: " +
+          usuario.habilidades.join(",")
+        );
+      }
+
+    </script>
+  </body>
+</html>
