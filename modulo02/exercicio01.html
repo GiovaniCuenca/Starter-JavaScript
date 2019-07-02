@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RocketSeat JavaScript - Modulo 02 - Exercicio 01</title>
+  </head>
+  <!-- Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+  vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+  aparecer na tela. -->
+
+  <body>
+      <button id="botao">ADD Squares</button>
+      <button id="botaoreset">Reset Squares</button>
+      <div id="box"></div>
+
+    <script>
+      var buttonElement = document.getElementById('botao');
+      var boxElement = document.getElementById('box');
+      var resetElement = document.getElementById('botaoreset');
+
+      buttonElement.onclick = function() {
+        var box = document.createElement('div');
+
+        box.style.width = 100;
+        box.style.height = 100;
+        box.style.backgroundColor = '#F00';
+       
+        boxElement.appendChild(box);
+      };
+
+      resetElement.onclick = function() {
+        location.reload()
+      };
+
+
+    </script>
+  </body>
+</html>

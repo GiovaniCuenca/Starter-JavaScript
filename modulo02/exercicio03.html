@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>RocketSeat JavaScript - Modulo 02 - Exercicio 03</title>
+    <link rel="stylesheet" type="text/css" href="exercicio03.css">
+  </head>
+  <body>
+    <ul id="listaum"><p class="lista">Lista</p>
+      <il id="idum">Nomes
+        <ul id="listadois">
+          
+        </ul>
+
+      </il>
+    </ul>
+
+    <script>
+
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+
+      var listElement = document.getElementById('listadois');
+
+      for (nome of nomes) {
+        var listNomes = document.createElement('li');
+        var listText = document.createTextNode(nome);
+
+        listNomes.appendChild(listText);
+        listElement.appendChild(listNomes);
+      }
+
+
+
+      
+
+    </script>
+  </body>
+</html>
