@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>RocketSeat JavaScript - Modulo 02 - Exercicio 04</title>
+    <link rel="stylesheet" type="text/css" href="exercicio03.css">
+  </head>
+  <body>
+   
+    <ul id="listaum"><b><h6 class="lista">Lista</h6></b>
+      <il id="idum" class="lista"> Nomes
+        <ul id="listadois" class="lista">
+        </ul>
+      </il>
+    </ul>
+
+    <input type="text" name="newname" id="newname">
+    <button onClick="adicionar()">Adicionar Nome</button>
+    <script>
+
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+      var listElement = document.getElementById('listadois');
+      var getName = document.getElementById('newname');
+
+      function addItem(text) {
+        var listNomes = document.createElement('li');
+        var listText = document.createTextNode(text);
+
+        listNomes.appendChild(listText);
+        listElement.appendChild(listNomes);
+      }
+
+      function adicionar(){
+        addItem(getName.value);
+        getName.value = "";
+      }
+
+      for (nome of nomes) {
+        addItem(nome);
+      }
+            
+    </script>
+  </body>
+</html>
