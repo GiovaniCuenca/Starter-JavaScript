@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="lista">
+  </ul>
+
+  <input type="text" id="inputNome" placeholder="Novo Nome">
+  <input type="button" id="buttonAdd" value="Adicionar" onclick="adicionar()">
+
+  <script>
+    var listaLi = document.querySelector('#lista');
+    var nomes = ["Balthasar", "Melchior", "Gaspar"];
+    var novoNome = document.getElementById('inputNome');
+    novoNome.focus();
+
+    function addItem(text) {
+      var nomeElement = document.createElement('li');
+      var textNome = document.createTextNode(text);
+
+      nomeElement.appendChild(textNome);
+      listaLi.appendChild(nomeElement);
+    }
+
+    function adicionar() {
+      addItem(novoNome.value);
+      novoNome.value = "";
+      novoNome.focus();
+    }
+
+    for (nome of nomes){
+      addItem(nome);
+    }
+
+
+  </script>
+</body>
+</html>
