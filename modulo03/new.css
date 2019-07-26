@@ -1,34 +1,52 @@
 body {
-  background-color: #A7D46F;
+  background-color: #150940;
   font-family: 'Roboto', sans-serif;
   font-size: 15pt;
   -webkit-font-smoothing: antialiased !important;
 }
 
-div {
-  display: block;
+div#interface {
+  color: #150940;
+  width: 620px;
+  background-image: linear-gradient(#F2C849, #F2E74B, #F2E74B);
+  border-radius: 20px;
+  margin: 0px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(60, 51, 82, 0.15);
 }
 
-div#interface {
-  color: #3C3352;
-  width: 600px;
-  height: 500px;
-  background-image: linear-gradient(rgb(241, 224, 135), #FFED8F, #FFED8F);
-  border-radius: 20px;
-  margin: -40px auto 0px auto;
-  box-shadow: 0px 0px 10px rgba(60, 51, 82, 0.15);
+header#cabecalho {
+  font-family: 'Nunito', sans-serif;
+  background-color: white;
+  height: 50px;
+  margin: -10px auto 0px auto;
+  border-bottom: 2px solid #F29849;
+  font-size: 10pt;
+  font-weight: 600;
+  padding: 10px;
+}
+
+header#cabecalho h3{
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+header#cabecalho h4{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 section#esquerda {
   display: block;
   position: relative;
-  margin: auto;
-  top: 40px;
-  left: -180px;
-  border: 4px solid #A7D46F;
+  top: 30px;
+  left: 10px;
+  border: 4px solid #F29849;
   border-radius: 10px;
   width: 200px;
-  height: 250px;
+  height: 240px;
 }
 
 section#esquerda h1 {
@@ -37,68 +55,101 @@ section#esquerda h1 {
   width: 160px;
   margin: auto;
   height: 20px;
-  background-color: #FFED8F;
-  border: 4px solid #3C3352;
+  background-color: #F29849;
   font-size: 13pt;
   text-align: center;
   padding: 10px;
   top: 7px;
   border-radius: 7px;
-  color: #359768;
-  font-weight: bold;
+  color: white;
 }
 
-section#esquerda textarea#idTodo {
+section#esquerda textarea#idinputTodo {
   display: block;
   position: relative;
-  width: 160px;
-  height: 80px;
-  left: 6px;
+  width: 154px;
+  height: 40px;
+  left: 8px;
   top: 14px;
   font-family: 'Roboto', sans-serif;
-  background-color: #A7D46F;
-  border: 4px solid #3C3352;
+  background-color: transparent;
+  border: 4px solid #F29849;
   border-radius: 7px;
   padding: 10px;
-  color: #359768;
-  font-weight: bold;
+  color: #150940;
   font-size: 12pt;
   resize: none;
+}
+
+section#esquerda input#idHora {
+  width: 110px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  border: 4px solid #F29849;
+  border-radius: 7px;
+  color: #150940;
+  font-size: 12pt;
+  resize: none;
+}
+
+section#esquerda p {
+  margin-left: 14px;
+  padding: 2px;
 }
 
 section#esquerda input#idEnviar {
   display: block;
   position: relative;
-  width: 187px;
-  height: 66px;
-  left: 6px;
-  top: 21px;
+  width: 180px;
+  height: 55px;
+  left: 10px;
+  top: -15px;
   font-family: 'Roboto', sans-serif;
-  background-color: #3C3352;
-  border: 4px solid #3C3352;
+  background-color: #150940;
+  border: 4px solid #150940;
   border-radius: 7px;
   padding: 10px;
-  color: #FFED8F;
-  font-weight: bold;
+  color: white;
   font-size: 12pt;
+  font-weight: bold;
 }
 
 aside#direita {
   display: block;
   position: relative;
-  margin: auto;
-  width: 150px;
-  left: 20px;
-  top: -215px;
-  height: 150px;
-  color: #3C3352;
+  top: -220px;
+  left: 240px;
+  width: 360px;
+  height: 90px;
+  color: #150940;
+  font-size: 12pt;
+}
+
+aside#direita li {
+  padding: 2px;
   font-weight: bold;
 }
 
+aside#direita li a {
+  font-weight: normal;
+  font-size: 8pt;
+  color: white;
+  background-color: #F29849;
+  border-radius: 6px;
+  padding: 2px 5px 2px 5px;
+  text-decoration: none;
+  margin-left: -10px;
+  margin-right: 5px;
+}
+
 footer#rodape {
+  display: block;
+  object-position: relative;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-image: linear-gradient(rgb(241, 224, 135), #FFED8F, #FFED8F, #FFED8F);
+  background-color: #F2C849;
+  font-family: 'Nunito', sans-serif;
   font-size: 10pt;
   text-align: center;
   padding: 10px 0px 10px 0px;
@@ -111,33 +162,4 @@ footer#rodape h2 {
 
 footer#rodape h3 {
   font-size: 10pt;
-}
-
-div#cores h1 {
-  display: none;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: #FFED8F;
-}
-div#cores h2 {
-  display: none;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background-color: #A7D46F;
-}
-div#cores h3 {
-  display: none;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background-color: #359768;
-}
-div#cores h4 {
-  display: none;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background-color: #3C3352;
 }

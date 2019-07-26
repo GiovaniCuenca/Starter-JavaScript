@@ -9,28 +9,22 @@
 </head>
 <body>
   <div id="interface">
+    <header id="cabecalho">
+      <h3>Criar LIs em HTML através do Javascript</h3>
+      <h4>Javascript / HTML / CSS studies.</h4>
+    </header>
     <section id="esquerda">
       <h1> Digite Um "To Do" </h1>
-      <textarea name="nTodo" id="idTodo" cols="20" rows="8" placeholder="Digite o seu próximo To Do..."></textarea>
-      <input type="button" name="nEnviar" id="idEnviar" value="ENVIAR">
+      <textarea name="ninputTodo" id="idinputTodo" cols="20" rows="8" placeholder="Digite o seu próximo To Do..."></textarea>
+      <p>Hora:  <input type="time" name="nHora" id="idHora" placeholder="Digite a Hora"></p>
+      <input type="button" name="nEnviar" id="idEnviar" value="ENVIAR" onclick="adicionar()">
     </section>
     <aside id="direita">
-      <ul id="lista">
-      </ul>
+      <ul id="lista"></ul>
     </aside>
-
-    <div id="cores">
-      <h1></h1>
-      <h2></h2>
-      <h3></h3>
-      <h4></h4>
-    </div>
-
-
-
     <footer id="rodape">
       <h2>&copy; Copyright - Giovani Cuenca</h2>
-      <h3>July/2019 - Javascript / HTML / CSS studies</h3>
+      <h3>July/2019</h3>
     </footer>
   </div>
   <script src="new.js"></script>
